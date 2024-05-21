@@ -8,7 +8,7 @@ from annotator.manga_line import MangaLineExtration
 from annotator.lineart_anime import LineartAnimeDetector
 from annotator.hed import apply_hed
 from annotator.canny import apply_canny
-from annotator.pidinet import apply_pidinet
+# from annotator.pidinet import apply_pidinet
 from annotator.leres import apply_leres
 from annotator.midas import apply_midas
 
@@ -207,6 +207,6 @@ preprocessors_dict = {
 
 def pixel_perfect_process(input_image, p_name):
     raw_H, raw_W, _ = input_image.shape
-    preprocessor_resolution = raw_H
+    preprocessor_resolution = int(raw_H)
     detected_map, _ = preprocessors_dict[p_name](input_image, res=preprocessor_resolution)
     return detected_map

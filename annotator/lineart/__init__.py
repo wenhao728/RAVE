@@ -1,7 +1,7 @@
 import os
 import torch
 import numpy as np
-from basicsr.utils.download_util import load_file_from_url
+# from basicsr.utils.download_util import load_file_from_url
 import torch.nn as nn
 from einops import rearrange
 import utils.constants as const

@@ -11,7 +11,8 @@ from annotator.annotator_path import models_path, DEVICE
 
 
 class ZoeDetector:
-    model_dir = os.path.join(models_path, "zoedepth")
+    # model_dir = os.path.join(models_path, "zoedepth")
+    model_dir = '/data/trc/tmp-swh/models/zoedepth'
 
     def __init__(self):
         self.model = None

@@ -23,7 +23,8 @@ PREPROCESSOR_DICT = {
     'depth_leres': 'lllyasviel/control_v11f1p_sd15_depth',
     'depth_leres++': 'lllyasviel/control_v11f1p_sd15_depth',
     'depth_midas': 'lllyasviel/control_v11f1p_sd15_depth',
-    'depth_zoe': 'lllyasviel/control_v11f1p_sd15_depth',
+    # 'depth_zoe': 'lllyasviel/control_v11f1p_sd15_depth',
+    'depth_zoe': '/data/trc/tmp-swh/models/control_v11f1p_sd15_depth',
 }
 
 MODEL_IDS = {

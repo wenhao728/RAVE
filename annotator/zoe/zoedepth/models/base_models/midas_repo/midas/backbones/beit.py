@@ -30,11 +30,11 @@ def _get_rel_pos_bias(self, window_size):
     """
     Modification of timm.models.beit.py: Attention._get_rel_pos_bias to support arbitrary window sizes.
     """
-    old_height = 2 * self.window_size[0] - 1
-    old_width = 2 * self.window_size[1] - 1
+    old_height = int(2 * self.window_size[0] - 1)
+    old_width = int(2 * self.window_size[1] - 1)
 
-    new_height = 2 * window_size[0] - 1
-    new_width = 2 * window_size[1] - 1
+    new_height = int(2 * window_size[0] - 1)
+    new_width = int(2 * window_size[1] - 1)
 
     old_relative_position_bias_table = self.relative_position_bias_table
 
